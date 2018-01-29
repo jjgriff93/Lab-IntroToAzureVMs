@@ -129,13 +129,13 @@ The parameters file is used by the deployment script to populate all of the, wel
 
 Once you're done, your parameter file should look something like this:
 
-<script src="https://gist.github.com/jjgriff93/b96ace53b4c241e7c3c4e8ef7d70881a.js"></script>
+![parameters.json](https://gist.github.com/jjgriff93/b96ace53b4c241e7c3c4e8ef7d70881a)
 
 ##### **Step 3 - Modify the deployment template file**
 
 Okay, now we just need to make a couple of modifications to the template file as well, to change it from an unmanaged disk deployment to use managed disks. Open up the **template.json** file and replace the content with the below: 
 
-<script src="https://gist.github.com/jjgriff93/94c0a480dfcaabdfcbe6612dfbfeeed6.js"></script>
+![template.json](https://gist.github.com/jjgriff93/94c0a480dfcaabdfcbe6612dfbfeeed6)
 
 Make sure you save the file once it's been modified.
 
@@ -163,7 +163,7 @@ We're going to install the PowerShell Desired State Configuration (DSC) Extensio
 
 Okay, let's create a quick configuration document that we'll use to enforce our 'desired state' on the VM. Copy the code below and save it to your desktop as a .ps1 (PowerShell) file using Notepad, Visual Studio Code or your favourite text editor: 
 
-<script src="https://gist.github.com/jjgriff93/ff5f1c4a68d724557f2dc88616bc1cc7.js"></script>
+![IISInstall.ps1](https://gist.github.com/jjgriff93/ff5f1c4a68d724557f2dc88616bc1cc7)
 
 Call it **IISInstall.ps1**. This will enforce our VM to have Internet Information Services (IIS) present, which will in effect make our machine a web server.
 
